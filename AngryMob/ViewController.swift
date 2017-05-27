@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import Moya
 
 class ViewController: UIViewController {
-
+    
+    let api = APIClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let image = UIImage(named: "istock_businessman")
+        let data = UIImageJPEGRepresentation(image!, 1.0)
+        
+        api.uploadImage(image: data!, fileName: "")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
-
