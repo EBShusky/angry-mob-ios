@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4FC9261ED9B5160045BFB5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9251ED9B5160045BFB5 /* CameraViewController.swift */; };
+		BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9271ED9B51C0045BFB5 /* CameraOutputProcessor.swift */; };
 		BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366351ED8BF57005ADF0B /* AppDelegate.swift */; };
 		BCA366381ED8BF57005ADF0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366371ED8BF57005ADF0B /* ViewController.swift */; };
 		BCA3663B1ED8BF57005ADF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA366391ED8BF57005ADF0B /* Main.storyboard */; };
 		BCA3663D1ED8BF57005ADF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */; };
 		BCA366401ED8BF57005ADF0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA3663E1ED8BF57005ADF0B /* LaunchScreen.storyboard */; };
-		BFB5BFE31ED96F9400B0846C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE21ED96F9400B0846C /* CameraViewController.swift */; };
-		BFB5BFE51ED980FB00B0846C /* CameraOutputProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE41ED980FB00B0846C /* CameraOutputProcessor.swift */; };
+		BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366471ED8CAA8005ADF0B /* APIClient.swift */; };
+		BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763D1ED96A8C002E8EEA /* Router.swift */; };
+		BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */; };
+		E03FD257CBE4CD0B92C753B2 /* Pods_AngryMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1222CD7163C59D3816440F /* Pods_AngryMob.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1222CD7163C59D3816440F /* Pods_AngryMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngryMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A274F325D36035A946CE8081 /* Pods-AngryMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryMob.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngryMob/Pods-AngryMob.release.xcconfig"; sourceTree = "<group>"; };
+		BC4FC9251ED9B5160045BFB5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		BC4FC9271ED9B51C0045BFB5 /* CameraOutputProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOutputProcessor.swift; sourceTree = "<group>"; };
 		BCA366321ED8BF57005ADF0B /* AngryMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA366351ED8BF57005ADF0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA366371ED8BF57005ADF0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +32,11 @@
 		BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA3663F1ED8BF57005ADF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA366411ED8BF57005ADF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFB5BFE21ED96F9400B0846C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		BFB5BFE41ED980FB00B0846C /* CameraOutputProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOutputProcessor.swift; sourceTree = "<group>"; };
+		BCA366471ED8CAA8005ADF0B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BCBF763C1ED8EE11002E8EEA /* AngryMob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AngryMob-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCBF763D1ED96A8C002E8EEA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		D18891BF49FB645C3C3CFA83 /* Pods-AngryMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryMob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngryMob/Pods-AngryMob.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03FD257CBE4CD0B92C753B2 /* Pods_AngryMob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A1520E7F251EAF573EEE7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C1222CD7163C59D3816440F /* Pods_AngryMob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AF8B6BB22C2F31B30DFD47F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D18891BF49FB645C3C3CFA83 /* Pods-AngryMob.debug.xcconfig */,
+				A274F325D36035A946CE8081 /* Pods-AngryMob.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BCA366291ED8BF57005ADF0B = {
 			isa = PBXGroup;
 			children = (
 				BCA366341ED8BF57005ADF0B /* AngryMob */,
 				BCA366331ED8BF57005ADF0B /* Products */,
+				7AF8B6BB22C2F31B30DFD47F /* Pods */,
+				14A1520E7F251EAF573EEE7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,13 +90,17 @@
 			isa = PBXGroup;
 			children = (
 				BCA366351ED8BF57005ADF0B /* AppDelegate.swift */,
+				BCA366471ED8CAA8005ADF0B /* APIClient.swift */,
+				BCBF763D1ED96A8C002E8EEA /* Router.swift */,
 				BCA366371ED8BF57005ADF0B /* ViewController.swift */,
+				BC4FC9271ED9B51C0045BFB5 /* CameraOutputProcessor.swift */,
+				BC4FC9251ED9B5160045BFB5 /* CameraViewController.swift */,
 				BCA366391ED8BF57005ADF0B /* Main.storyboard */,
 				BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */,
 				BCA3663E1ED8BF57005ADF0B /* LaunchScreen.storyboard */,
 				BCA366411ED8BF57005ADF0B /* Info.plist */,
-				BFB5BFE21ED96F9400B0846C /* CameraViewController.swift */,
-				BFB5BFE41ED980FB00B0846C /* CameraOutputProcessor.swift */,
+				BCBF763C1ED8EE11002E8EEA /* AngryMob-Bridging-Header.h */,
+				BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -77,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCA366441ED8BF57005ADF0B /* Build configuration list for PBXNativeTarget "AngryMob" */;
 			buildPhases = (
+				3734F0AE334EC27F5C44BFAD /* [CP] Check Pods Manifest.lock */,
 				BCA3662E1ED8BF57005ADF0B /* Sources */,
 				BCA3662F1ED8BF57005ADF0B /* Frameworks */,
 				BCA366301ED8BF57005ADF0B /* Resources */,
+				D9EC490CE9EAA2651DA5CB5D /* [CP] Embed Pods Frameworks */,
+				F0B209115555D79E5844942A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,15 +176,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3734F0AE334EC27F5C44BFAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EC490CE9EAA2651DA5CB5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngryMob/Pods-AngryMob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B209115555D79E5844942A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngryMob/Pods-AngryMob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCA3662E1ED8BF57005ADF0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB5BFE51ED980FB00B0846C /* CameraOutputProcessor.swift in Sources */,
 				BCA366381ED8BF57005ADF0B /* ViewController.swift in Sources */,
+				BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */,
 				BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */,
-				BFB5BFE31ED96F9400B0846C /* CameraViewController.swift in Sources */,
+				BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */,
+				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
+				BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */,
+				BC4FC9261ED9B5160045BFB5 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +356,7 @@
 		};
 		BCA366451ED8BF57005ADF0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18891BF49FB645C3C3CFA83 /* Pods-AngryMob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CUL6N2TN82;
@@ -275,12 +365,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = angrymob.AngryMob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AngryMob/AngryMob-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		BCA366461ED8BF57005ADF0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A274F325D36035A946CE8081 /* Pods-AngryMob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CUL6N2TN82;
@@ -289,6 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = angrymob.AngryMob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AngryMob/AngryMob-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
