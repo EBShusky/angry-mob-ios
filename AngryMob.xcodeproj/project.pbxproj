@@ -17,6 +17,10 @@
 		BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366471ED8CAA8005ADF0B /* APIClient.swift */; };
 		BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763D1ED96A8C002E8EEA /* Router.swift */; };
 		BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */; };
+		BFB5BFE91ED9BDB100B0846C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */; };
+		BFB5BFEB1ED9BDCE00B0846C /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */; };
+		BFB5BFED1ED9CBA200B0846C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */; };
+		BFB5BFEF1ED9CBB000B0846C /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB5BFEE1ED9CBB000B0846C /* Stats.storyboard */; };
 		E03FD257CBE4CD0B92C753B2 /* Pods_AngryMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1222CD7163C59D3816440F /* Pods_AngryMob.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,10 @@
 		BCBF763C1ED8EE11002E8EEA /* AngryMob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AngryMob-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCBF763D1ED96A8C002E8EEA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		BFB5BFEE1ED9CBB000B0846C /* Stats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
 		D18891BF49FB645C3C3CFA83 /* Pods-AngryMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryMob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngryMob/Pods-AngryMob.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +109,10 @@
 				BCA366411ED8BF57005ADF0B /* Info.plist */,
 				BCBF763C1ED8EE11002E8EEA /* AngryMob-Bridging-Header.h */,
 				BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */,
+				BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */,
+				BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */,
+				BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */,
+				BFB5BFEE1ED9CBB000B0846C /* Stats.storyboard */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -169,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA366401ED8BF57005ADF0B /* LaunchScreen.storyboard in Resources */,
+				BFB5BFED1ED9CBA200B0846C /* Camera.storyboard in Resources */,
+				BFB5BFEF1ED9CBB000B0846C /* Stats.storyboard in Resources */,
 				BCA3663D1ED8BF57005ADF0B /* Assets.xcassets in Resources */,
 				BCA3663B1ED8BF57005ADF0B /* Main.storyboard in Resources */,
 			);
@@ -236,6 +250,8 @@
 				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
 				BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */,
 				BC4FC9261ED9B5160045BFB5 /* CameraViewController.swift in Sources */,
+				BFB5BFEB1ED9BDCE00B0846C /* StatsViewController.swift in Sources */,
+				BFB5BFE91ED9BDB100B0846C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
