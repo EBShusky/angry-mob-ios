@@ -12,6 +12,8 @@
 		BCA3663B1ED8BF57005ADF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA366391ED8BF57005ADF0B /* Main.storyboard */; };
 		BCA3663D1ED8BF57005ADF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */; };
 		BCA366401ED8BF57005ADF0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA3663E1ED8BF57005ADF0B /* LaunchScreen.storyboard */; };
+		BFB5BFE31ED96F9400B0846C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE21ED96F9400B0846C /* CameraViewController.swift */; };
+		BFB5BFE51ED980FB00B0846C /* CameraOutputProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE41ED980FB00B0846C /* CameraOutputProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA3663F1ED8BF57005ADF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA366411ED8BF57005ADF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB5BFE21ED96F9400B0846C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		BFB5BFE41ED980FB00B0846C /* CameraOutputProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOutputProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */,
 				BCA3663E1ED8BF57005ADF0B /* LaunchScreen.storyboard */,
 				BCA366411ED8BF57005ADF0B /* Info.plist */,
+				BFB5BFE21ED96F9400B0846C /* CameraViewController.swift */,
+				BFB5BFE41ED980FB00B0846C /* CameraOutputProcessor.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -96,7 +102,7 @@
 				TargetAttributes = {
 					BCA366311ED8BF57005ADF0B = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = U93YDWPL27;
+						DevelopmentTeam = CUL6N2TN82;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB5BFE51ED980FB00B0846C /* CameraOutputProcessor.swift in Sources */,
 				BCA366381ED8BF57005ADF0B /* ViewController.swift in Sources */,
 				BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */,
+				BFB5BFE31ED96F9400B0846C /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +269,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U93YDWPL27;
+				DEVELOPMENT_TEAM = CUL6N2TN82;
 				INFOPLIST_FILE = AngryMob/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = angrymob.AngryMob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +283,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U93YDWPL27;
+				DEVELOPMENT_TEAM = CUL6N2TN82;
 				INFOPLIST_FILE = AngryMob/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = angrymob.AngryMob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +312,7 @@
 				BCA366461ED8BF57005ADF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
