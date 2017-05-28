@@ -19,7 +19,7 @@ struct Hours {
 extension Hours: Mappable {
     init(map: Mapper) throws {
         hoursArray = Array<Int>()
-        for index in 0...23 {
+        for index in 0...24 {
             let value:Int? = map.optionalFrom("\(index)")
             
             if let value = value {

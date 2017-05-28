@@ -32,8 +32,8 @@ class HoursViewController: UIViewController {
         
         var index = 0
         for progressBar:HorizontalProgressView in progressBarViews {
-            let result = ageArray[startAge + index * 2 + 1]
-                + ageArray[startAge + index * 2 + 2]
+            let result = ageArray[startAge + index * 2 + 0]
+                + ageArray[startAge + index * 2 + 1]
             
             let percentage = Float(result) / Float(total)
             
