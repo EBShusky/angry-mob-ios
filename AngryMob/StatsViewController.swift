@@ -188,8 +188,7 @@ public class StatsViewController: UIViewController {
                 PieSliceModel(value: Double(gender.male), color: self.blueColor),
                 PieSliceModel(value: Double(gender.female), color: self.pinkColor)
             ]
-            
-            
+        
         }).addDisposableTo(disposeBag)
     }
     

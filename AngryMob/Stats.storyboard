@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lvs-It-vyj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lvs-It-vyj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -260,19 +260,19 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0n-bx-nXH">
                                         <rect key="frame" x="0.0" y="57" width="375" height="211"/>
                                         <connections>
-                                            <segue destination="XCZ-5t-rB7" kind="embed" id="e2n-iI-S4g"/>
+                                            <segue destination="XCZ-5t-rB7" kind="embed" identifier="age" id="e2n-iI-S4g"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="han-s0-e4P">
                                         <rect key="frame" x="0.0" y="57" width="375" height="211"/>
                                         <connections>
-                                            <segue destination="Yqv-at-eit" kind="embed" id="0fv-XY-MOs"/>
+                                            <segue destination="Yqv-at-eit" kind="embed" identifier="hours" id="0fv-XY-MOs"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNH-4Y-x4R">
                                         <rect key="frame" x="0.0" y="57" width="375" height="211"/>
                                         <connections>
-                                            <segue destination="l2c-ga-h16" kind="embed" id="eff-4m-iEe"/>
+                                            <segue destination="l2c-ga-h16" kind="embed" identifier="emotions" id="eff-4m-iEe"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -342,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="160.80000000000001" y="173.16341829085459"/>
         </scene>
-        <!--View Controller-->
+        <!--Age View Controller-->
         <scene sceneID="dDo-wu-bSE">
             <objects>
-                <viewController id="XCZ-5t-rB7" sceneMemberID="viewController">
+                <viewController id="XCZ-5t-rB7" customClass="AgeViewController" customModule="AngryMob" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZYC-wH-M4W"/>
                         <viewControllerLayoutGuide type="bottom" id="mhc-Nd-VTD"/>
@@ -496,15 +496,29 @@
                             <constraint firstItem="U4j-uc-FWp" firstAttribute="leading" secondItem="igz-7I-YgT" secondAttribute="trailing" constant="15" id="i5O-s7-VDZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="progressBarViews" destination="Xuv-4m-Jiq" collectionClass="NSMutableArray" id="ret-yL-9y1"/>
+                        <outletCollection property="progressBarViews" destination="6Ib-Nj-vjl" collectionClass="NSMutableArray" id="7dm-We-r4q"/>
+                        <outletCollection property="progressBarViews" destination="QEM-yr-gZm" collectionClass="NSMutableArray" id="x2s-Ub-LKX"/>
+                        <outletCollection property="progressBarViews" destination="cj2-yq-YXm" collectionClass="NSMutableArray" id="Mb2-Oh-YlW"/>
+                        <outletCollection property="progressBarViews" destination="Y5C-EC-ugG" collectionClass="NSMutableArray" id="Nmh-6h-8Z2"/>
+                        <outletCollection property="progressBarViews" destination="9b6-qe-ycy" collectionClass="NSMutableArray" id="vc8-yc-Rh4"/>
+                        <outletCollection property="progressBarViews" destination="EX2-Cd-T2L" collectionClass="NSMutableArray" id="jdJ-Qa-Bag"/>
+                        <outletCollection property="progressBarViews" destination="2PU-HE-dJm" collectionClass="NSMutableArray" id="P1n-TW-bqX"/>
+                        <outletCollection property="progressBarViews" destination="AgC-T7-1dp" collectionClass="NSMutableArray" id="cw7-ly-qQf"/>
+                        <outletCollection property="progressBarViews" destination="agL-z6-NVd" collectionClass="NSMutableArray" id="g8G-E2-IZg"/>
+                        <outletCollection property="progressBarViews" destination="NpC-we-0bP" collectionClass="NSMutableArray" id="Kdk-OO-9xD"/>
+                        <outletCollection property="progressBarViews" destination="Usr-sa-WYT" collectionClass="NSMutableArray" id="yPB-0B-dt3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFr-iS-nP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-551" y="781"/>
+            <point key="canvasLocation" x="-518" y="775"/>
         </scene>
-        <!--Age View Controller-->
+        <!--Hours View Controller-->
         <scene sceneID="9sI-gG-6iE">
             <objects>
-                <viewController id="Yqv-at-eit" customClass="AgeViewController" customModule="AngryMob" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yqv-at-eit" customClass="HoursViewController" customModule="AngryMob" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iyk-aX-GyM"/>
                         <viewControllerLayoutGuide type="bottom" id="fTo-lh-Kjf"/>
@@ -667,6 +681,20 @@
                             <constraint firstItem="QGV-5p-eeX" firstAttribute="top" secondItem="wFl-bA-lE3" secondAttribute="top" constant="10" id="oyb-rg-Pex"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="progressBarViews" destination="RKU-cY-CYf" collectionClass="NSMutableArray" id="JY5-bo-5vB"/>
+                        <outletCollection property="progressBarViews" destination="Z6x-KI-30u" collectionClass="NSMutableArray" id="8x9-m4-1Ke"/>
+                        <outletCollection property="progressBarViews" destination="Ond-w7-uMC" collectionClass="NSMutableArray" id="QSM-ZB-dUy"/>
+                        <outletCollection property="progressBarViews" destination="K07-uk-tHr" collectionClass="NSMutableArray" id="PsU-m9-3wo"/>
+                        <outletCollection property="progressBarViews" destination="2l9-1e-fGG" collectionClass="NSMutableArray" id="8m8-BA-Bp9"/>
+                        <outletCollection property="progressBarViews" destination="sqc-b7-qG3" collectionClass="NSMutableArray" id="Jvd-1C-7KN"/>
+                        <outletCollection property="progressBarViews" destination="Alj-ia-bFp" collectionClass="NSMutableArray" id="sih-wY-Ww4"/>
+                        <outletCollection property="progressBarViews" destination="GLX-qW-BR9" collectionClass="NSMutableArray" id="O5O-m7-Otd"/>
+                        <outletCollection property="progressBarViews" destination="JwQ-X9-0wO" collectionClass="NSMutableArray" id="2re-Ox-MjL"/>
+                        <outletCollection property="progressBarViews" destination="k02-b4-DgU" collectionClass="NSMutableArray" id="n8Y-U1-a2G"/>
+                        <outletCollection property="progressBarViews" destination="LB5-kI-36a" collectionClass="NSMutableArray" id="C0L-7V-pdK"/>
+                        <outletCollection property="progressBarViews" destination="EUQ-Qf-PPs" collectionClass="NSMutableArray" id="lFv-3R-2o3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VZ-G1-FZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
