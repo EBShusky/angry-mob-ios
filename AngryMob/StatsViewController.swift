@@ -17,10 +17,15 @@ import PieCharts
 
 public class StatsViewController: UIViewController {
     
+    @IBOutlet weak var menPercent: UILabel!
+    @IBOutlet weak var womenPercent: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var submitButton: UIButton!
     
 
+    let api = APIClient.sharedInstance
+    
     @IBOutlet weak var genderChart: PieChart!
     @IBOutlet weak var endDateButton: UIButton!
     @IBOutlet weak var startDateButton: UIButton!
@@ -32,6 +37,7 @@ public class StatsViewController: UIViewController {
     @IBOutlet weak var leadingConst: NSLayoutConstraint!
     @IBOutlet weak var widthConst: NSLayoutConstraint!
     
+    
     let pinkColor = UIColor(red:0.94, green:0.45, blue:0.45, alpha:1.0)
     let blueColor = UIColor(red:0.24, green:0.67, blue:0.90, alpha:1.0)
     
@@ -39,6 +45,9 @@ public class StatsViewController: UIViewController {
     let inactive = UIColor(red:0.64, green:0.56, blue:0.65, alpha:1.0)
     
     let disposeBag = DisposeBag()
+    
+    var since: Date = Date()
+    var to: Date = Date()
     
     @IBOutlet weak var ageContainer: UIView!
     @IBOutlet weak var hoursContainer: UIView!
@@ -60,6 +69,7 @@ public class StatsViewController: UIViewController {
         startDateButton.rx.tap.subscribe(onNext:{ [weak self] in
             DatePickerDialog().show(title: "Select start date", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) { date in
                 guard let date = date else { return }
+                self?.since = date
                 self?.startDateButton.setTitle(date.date, for: .normal)
             }
         }).addDisposableTo(disposeBag)
@@ -74,6 +84,7 @@ public class StatsViewController: UIViewController {
         endDateButton.rx.tap.subscribe(onNext:{ [weak self] in
             DatePickerDialog().show(title: "Select end date", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) { date in
                 guard let date = date else { return }
+                self?.to = date
                 self?.endDateButton.setTitle(date.date, for: .normal)
             }
         }).addDisposableTo(disposeBag)
@@ -109,6 +120,12 @@ public class StatsViewController: UIViewController {
         emotionsButton.rx.tap.subscribe(onNext:{ [weak self] in
             guard let `self` = self else { return }
             self.configureButtons(button: self.emotionsButton)
+        }).addDisposableTo(disposeBag)
+        
+        submitButton.rx.tap.subscribe(onNext:{ [weak self] in
+            guard let `self` = self else { return }
+            
+            self.genderSummary()
         }).addDisposableTo(disposeBag)
     }
     
@@ -154,6 +171,26 @@ public class StatsViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    func genderSummary() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        
+        api.getGenderSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { gender in
+            self.summaryLabel.text = "\(gender.female + gender.male)"
+            let doubleman: Double = (Double(gender.female) / (Double(gender.female) + Double(gender.male))) * 100
+            self.menPercent.text = "\(Int(doubleman)) %"
+            let doublewoman = (Double(gender.female) / (Double(gender.female) + Double(gender.male))) * 100
+            self.womenPercent.text = "\(Int(doublewoman)) %"
+            
+            self.genderChart.models = [
+                PieSliceModel(value: Double(gender.male), color: self.blueColor),
+                PieSliceModel(value: Double(gender.female), color: self.pinkColor)
+            ]
+            
+            
+        }).addDisposableTo(disposeBag)
     }
     
 }

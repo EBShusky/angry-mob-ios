@@ -9,6 +9,8 @@
 import Foundation
 import RxSwift
 import Moya
+import Mapper
+import Moya_ModelMapper
 
 protocol Requesting {
     func uploadImage(image: Data, fileName: String)
@@ -16,17 +18,22 @@ protocol Requesting {
 
 class APIClient: Requesting {
     
-    let provider: RxMoyaProvider<Router>
-    let disposeBag = DisposeBag()
+    static let sharedInstance = APIClient()
+    private init() {}
     
-    init() {
-        self.provider = RxMoyaProvider<Router>(endpointClosure:endpointClosure, plugins: [NetworkLoggerPlugin(verbose: true)])
-    }
+    let provider: RxMoyaProvider<Router> = RxMoyaProvider<Router>(endpointClosure:endpointClosure, plugins: [NetworkLoggerPlugin(verbose: true)])
+    
+    let disposeBag = DisposeBag()
     
     func uploadImage(image: Data, fileName: String) {
         provider.request(.image(imageData: image, fileName: fileName))
             .subscribe(onNext: { response in
 
             }).addDisposableTo(disposeBag)
+    }
+    
+    func getGenderSummary(from: String, to: String) -> Observable<Gender> {
+        return provider.request(.genderSummary(dateFrom: from, dateTo: to))
+            .mapObject(type: Gender.self)
     }
 }

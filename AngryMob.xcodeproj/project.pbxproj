@@ -30,6 +30,7 @@
 		BC4FC9501EDA19690045BFB5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC94F1EDA19690045BFB5 /* Extensions.swift */; };
 		BC4FC9521EDA62670045BFB5 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9511EDA62670045BFB5 /* EmotionsViewController.swift */; };
 		BC4FC9541EDA698D0045BFB5 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9531EDA698D0045BFB5 /* AgeViewController.swift */; };
+		BC897E271EDAC410008AA941 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC897E261EDAC410008AA941 /* Gender.swift */; };
 		BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366351ED8BF57005ADF0B /* AppDelegate.swift */; };
 		BCA366381ED8BF57005ADF0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366371ED8BF57005ADF0B /* ViewController.swift */; };
 		BCA3663B1ED8BF57005ADF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA366391ED8BF57005ADF0B /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		BC4FC94F1EDA19690045BFB5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BC4FC9511EDA62670045BFB5 /* EmotionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 		BC4FC9531EDA698D0045BFB5 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		BC897E261EDAC410008AA941 /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		BCA366321ED8BF57005ADF0B /* AngryMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA366351ED8BF57005ADF0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA366371ED8BF57005ADF0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				BC4FC94F1EDA19690045BFB5 /* Extensions.swift */,
 				BC4FC9531EDA698D0045BFB5 /* AgeViewController.swift */,
 				BFA750161ED9F92700BB91B3 /* FlashView.swift */,
+				BC897E261EDAC410008AA941 /* Gender.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */,
 				BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */,
 				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
+				BC897E271EDAC410008AA941 /* Gender.swift in Sources */,
 				BC4FC9501EDA19690045BFB5 /* Extensions.swift in Sources */,
 				BC4FC9521EDA62670045BFB5 /* EmotionsViewController.swift in Sources */,
 				BFA750171ED9F92700BB91B3 /* FlashView.swift in Sources */,

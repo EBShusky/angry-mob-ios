@@ -17,7 +17,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var modeButton: UIButton!
 
-    let api = APIClient()
+    let api = APIClient.sharedInstance.provider
 
     //Camera Capture requiered properties
     var videoDataOutput: AVCaptureVideoDataOutput!

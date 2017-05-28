@@ -9,10 +9,11 @@
 import Foundation
 import Moya
 
-let apiBaseURL = "http://192.168.43.40:8080"
+let apiBaseURL = "http://192.168.1.130:8080"
 
 enum Router {
     case image(imageData: Data, fileName: String)
+    case genderSummary(dateFrom: String, dateTo: String)
 }
 
 extension Router: TargetType {
@@ -25,6 +26,8 @@ extension Router: TargetType {
         switch self {
         case .image:
             return "/fileUpload"
+        case .genderSummary(_, _):
+            return "/info/genderSummary"
         }
     }
     
@@ -32,6 +35,8 @@ extension Router: TargetType {
         switch self {
         case .image:
             return .post
+        case .genderSummary:
+            return .get
             //        default:
             //            return .post
         }
@@ -41,6 +46,9 @@ extension Router: TargetType {
         switch self {
         case .image:
             return nil
+        case .genderSummary(let dateFrom, let dateTo):
+            return ["since":dateFrom, "until":dateTo]
+            
             //        default:
             //            return nil
         }
@@ -48,6 +56,8 @@ extension Router: TargetType {
     
     var parameterEncoding: Moya.ParameterEncoding {
         switch self {
+        case .genderSummary:
+            return URLEncoding.default
         default:
             return JSONEncoding.default
         }
@@ -59,8 +69,6 @@ extension Router: TargetType {
             return Dictionary()
         }
     }
-    
-
     
     var sampleData: Data {
         return "{\"result\": []}".data(using: String.Encoding.utf8)!
@@ -74,8 +82,8 @@ extension Router: TargetType {
                                                          fileName: fileName,
                                                          mimeType: "image/jpeg")]))
             
-//        default:
-//            return .request
+        default:
+            return .request
         }
     }
 }

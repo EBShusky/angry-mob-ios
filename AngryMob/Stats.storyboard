@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lvs-It-vyj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lvs-It-vyj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -329,10 +329,13 @@
                         <outlet property="hoursButton" destination="FlR-nd-q0L" id="PGE-hD-AhU"/>
                         <outlet property="hoursContainer" destination="han-s0-e4P" id="ALK-gL-X9Y"/>
                         <outlet property="leadingConst" destination="ou4-xm-S1b" id="G6E-6y-hSm"/>
+                        <outlet property="menPercent" destination="hA0-XW-3fy" id="N0E-lz-n4j"/>
                         <outlet property="startDateButton" destination="5wa-3a-Hvb" id="ba4-OK-aY6"/>
-                        <outlet property="submitButton" destination="ShE-Cq-NS6" id="DrI-jC-b7g"/>
+                        <outlet property="submitButton" destination="ShE-Cq-NS6" id="HRy-oa-qu0"/>
+                        <outlet property="summaryLabel" destination="8d1-Bb-0Yu" id="Dir-K7-sM2"/>
                         <outlet property="topView" destination="N1M-C1-Aye" id="QOT-my-QIy"/>
                         <outlet property="widthConst" destination="604-4d-kNO" id="sbG-cw-8AW"/>
+                        <outlet property="womenPercent" destination="sWm-hg-zKG" id="dmz-fp-Qzq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPU-Q3-Qzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
