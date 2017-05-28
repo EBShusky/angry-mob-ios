@@ -17,26 +17,26 @@ protocol Requesting {
 }
 
 class APIClient: Requesting {
-    
+
     static let sharedInstance = APIClient()
     private init() {}
-    
+
     let provider: RxMoyaProvider<Router> = RxMoyaProvider<Router>(endpointClosure:endpointClosure, plugins: [NetworkLoggerPlugin(verbose: true)])
-    
+
     let disposeBag = DisposeBag()
-    
+
     func uploadImage(image: Data, fileName: String) {
         provider.request(.image(imageData: image, fileName: fileName))
             .subscribe(onNext: { response in
 
             }).addDisposableTo(disposeBag)
     }
-    
+
     func getGenderSummary(from: String, to: String) -> Observable<Gender> {
         return provider.request(.genderSummary(dateFrom: from, dateTo: to))
             .mapObject(type: Gender.self)
     }
-    
+
     func getEmotionSummary(from: String, to: String) -> Observable<EmotionModel> {
         return provider.request(.emotions(dateFrom: from, dateTo: to))
             .mapObject(type: EmotionModel.self)
@@ -47,4 +47,8 @@ class APIClient: Requesting {
             .mapObject(type: Age.self)
     }
 
+    func getHoursSummary(from: String, to: String) -> Observable<Hours> {
+        return provider.request(.hoursSummary(dateFrom: from, dateTo: to))
+            .mapObject(type: Hours.self)
+    }
 }

@@ -11,22 +11,22 @@ import Mapper
 
 struct Hours {
     
-    var ageArray: [Int]
+    var hoursArray: [Int]
     
     
 }
 
 extension Hours: Mappable {
     init(map: Mapper) throws {
-        ageArray = Array<Int>()
+        hoursArray = Array<Int>()
         for index in 0...23 {
             let value:Int? = map.optionalFrom("\(index)")
             
             if let value = value {
-                ageArray.append(value)
+                hoursArray.append(value)
             }
             else {
-                ageArray.append(0)
+                hoursArray.append(0)
             }
         }
     }

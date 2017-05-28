@@ -11,10 +11,36 @@ import UIKit
 
 class HoursViewController: UIViewController {
     
-    @IBOutlet var progressBarViews: [UIView]!
+    @IBOutlet var progressBarViews: [HorizontalProgressView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    public func showHours(ageObject: Age) {
+        let ageArray = ageObject.ageArray
+        var total = 0
+        
+        for age in ageArray {
+            total += age
+        }
+        
+        let startAge = 0
+        let endAge = 24
+        let dAge = 5
+        
+        var index = 0
+        for progressBar:HorizontalProgressView in progressBarViews {
+            let result = ageArray[startAge + index * 2 + 1]
+                + ageArray[startAge + index * 2 + 2]
+            
+            let percentage = Float(result) / Float(total)
+            
+            progressBar.percentage = percentage
+            
+            index += 1
+        }
+    }
+
 }
