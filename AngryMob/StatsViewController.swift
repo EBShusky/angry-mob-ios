@@ -17,6 +17,7 @@ import PieCharts
 
 public class StatsViewController: UIViewController {
 
+    @IBOutlet weak var placeHolder: UIView!
     @IBOutlet weak var menPercent: UILabel!
     @IBOutlet weak var womenPercent: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
@@ -55,6 +56,8 @@ public class StatsViewController: UIViewController {
 
     var gender: Variable<Gender?> = Variable(nil)
     var emotion: Variable<EmotionModel?> = Variable(nil)
+    var age: Variable<Age?> = Variable(nil)
+    var hours: Variable<Hours?> = Variable(nil)
 //    var age: Variable<?> = Variable(nil)
 //    var hours: Variable<?> = Variable(nil)
 
@@ -118,12 +121,16 @@ public class StatsViewController: UIViewController {
         self.emotionsContainer.alpha = 0
 
 
-        Observable.combineLatest(self.gender.asObservable(), self.emotion.asObservable()).subscribe(onNext: { gen, emo in
+        Observable.combineLatest(self.gender.asObservable(), self.emotion.asObservable(), self.age.asObservable(), hours.asObservable()).subscribe(onNext: { gen, emo, ag, ho in
 
-            guard let gender = gen, let emotion = emo else {
+            guard let gender = gen, let emotion = emo, let age = ag, let hour = ho else {
+                self.placeHolder.isHidden = false
                 return
             }
 
+            self.placeHolder.isHidden = true
+            self.hoursVC.showHours(ageObject: hour)
+            self.ageVC.showAge(ageObject: age)
             self.emotionsVC.presentEmotion(emotion: emotion)
             self.presentGender(gender: gender)
         }).addDisposableTo(disposeBag)
@@ -166,6 +173,8 @@ public class StatsViewController: UIViewController {
 
             self.gender.value = nil
             self.emotion.value = nil
+            self.age.value = nil
+            self.hours.value = nil
 
             self.genderSummary()
             self.getEmotionsSummary()
@@ -238,20 +247,15 @@ public class StatsViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 
-        api.getAgeSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { age in
-            self.ageVC.showAge(ageObject: age)
-
-        }).addDisposableTo(disposeBag)
+        api.getAgeSummary(from: formatter.string(from: since), to: formatter.string(from: to)).bind(to: age)
+        .addDisposableTo(disposeBag)
     }
 
     public func hoursSummary() {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 
-        api.getHoursSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { age in
-//            self.hoursVC.showAge(ageObject: age)
-
-        }).addDisposableTo(disposeBag)
+        api.getHoursSummary(from: formatter.string(from: since), to: formatter.string(from: to)).bind(to: hours).addDisposableTo(disposeBag)
     }
 
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

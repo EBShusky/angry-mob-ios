@@ -300,6 +300,22 @@
                                     <constraint firstItem="X0n-bx-nXH" firstAttribute="top" secondItem="Y14-Fp-cnp" secondAttribute="bottom" constant="15" id="zSL-gd-6nS"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNN-Mp-Dj9">
+                                <rect key="frame" x="0.0" y="185" width="375" height="418"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-eY-qMl">
+                                        <rect key="frame" x="122" y="198.5" width="130" height="20"/>
+                                        <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
+                                        <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AiE-eY-qMl" firstAttribute="centerY" secondItem="pNN-Mp-Dj9" secondAttribute="centerY" id="58l-5b-88y"/>
+                                    <constraint firstItem="AiE-eY-qMl" firstAttribute="centerX" secondItem="pNN-Mp-Dj9" secondAttribute="centerX" id="HRO-JO-QsI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -310,12 +326,16 @@
                             <constraint firstItem="NS0-jb-vIO" firstAttribute="leading" secondItem="Fyj-eT-Ksg" secondAttribute="leading" id="J7A-TR-MFl"/>
                             <constraint firstAttribute="trailing" secondItem="gCD-cX-qYz" secondAttribute="trailing" id="L4u-b6-Ejg"/>
                             <constraint firstAttribute="trailing" secondItem="NS0-jb-vIO" secondAttribute="trailing" id="LER-ox-fd1"/>
+                            <constraint firstAttribute="trailing" secondItem="pNN-Mp-Dj9" secondAttribute="trailing" id="P12-xM-R5M"/>
                             <constraint firstItem="Ddx-mQ-ifH" firstAttribute="top" secondItem="NS0-jb-vIO" secondAttribute="bottom" id="Q4L-Ys-0Iv"/>
                             <constraint firstItem="N1M-C1-Aye" firstAttribute="leading" secondItem="Fyj-eT-Ksg" secondAttribute="leading" constant="15" id="RDK-5e-R4X"/>
+                            <constraint firstItem="Ddx-mQ-ifH" firstAttribute="top" secondItem="pNN-Mp-Dj9" secondAttribute="bottom" id="UvV-FU-e1S"/>
                             <constraint firstItem="gCD-cX-qYz" firstAttribute="leading" secondItem="Fyj-eT-Ksg" secondAttribute="leading" id="VeJ-q9-GnC"/>
                             <constraint firstItem="6Gw-Rp-8FI" firstAttribute="leading" secondItem="Fyj-eT-Ksg" secondAttribute="leading" id="Xih-C8-LKw"/>
+                            <constraint firstItem="pNN-Mp-Dj9" firstAttribute="top" secondItem="gCD-cX-qYz" secondAttribute="top" id="izO-vB-mFR"/>
                             <constraint firstAttribute="trailing" secondItem="6Gw-Rp-8FI" secondAttribute="trailing" id="stt-7I-F4g"/>
                             <constraint firstItem="6Gw-Rp-8FI" firstAttribute="top" secondItem="gCD-cX-qYz" secondAttribute="bottom" id="uxV-Zr-rMb"/>
+                            <constraint firstItem="pNN-Mp-Dj9" firstAttribute="leading" secondItem="Fyj-eT-Ksg" secondAttribute="leading" id="w7K-dw-Ynn"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -330,6 +350,7 @@
                         <outlet property="hoursContainer" destination="han-s0-e4P" id="ALK-gL-X9Y"/>
                         <outlet property="leadingConst" destination="ou4-xm-S1b" id="G6E-6y-hSm"/>
                         <outlet property="menPercent" destination="hA0-XW-3fy" id="N0E-lz-n4j"/>
+                        <outlet property="placeHolder" destination="pNN-Mp-Dj9" id="ef2-zg-53o"/>
                         <outlet property="startDateButton" destination="5wa-3a-Hvb" id="ba4-OK-aY6"/>
                         <outlet property="submitButton" destination="ShE-Cq-NS6" id="HRy-oa-qu0"/>
                         <outlet property="summaryLabel" destination="8d1-Bb-0Yu" id="Dir-K7-sM2"/>
