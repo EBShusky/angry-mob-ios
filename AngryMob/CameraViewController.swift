@@ -17,7 +17,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var modeButton: UIButton!
 
-    let api = APIClient.sharedInstance.provider
+    let api = APIClient.sharedInstance
 
     //Camera Capture requiered properties
     var videoDataOutput: AVCaptureVideoDataOutput!
@@ -157,7 +157,7 @@ extension CameraViewController:  AVCaptureVideoDataOutputSampleBufferDelegate{
                 let since1970 = currentDate.timeIntervalSince1970
                 let name = "img_\(UInt64((since1970 * 1000).rounded())).jpg"
 
-                //            self.api.uploadImage(image: data, fileName: name)
+                            self.api.uploadImage(image: data, fileName: name)
             }
 
             if (result) {
