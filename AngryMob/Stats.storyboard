@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lvs-It-vyj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lvs-It-vyj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -122,13 +122,13 @@
                                 <rect key="frame" x="0.0" y="185" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-XS-tBk">
-                                        <rect key="frame" x="15" y="15.5" width="55.5" height="20.5"/>
+                                        <rect key="frame" x="15" y="15" width="55.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d1-Bb-0Yu">
-                                        <rect key="frame" x="320.5" y="15" width="39.5" height="20.5"/>
+                                        <rect key="frame" x="320.5" y="15.5" width="39.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -147,31 +147,31 @@
                                 <rect key="frame" x="0.0" y="235" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA0-XW-3fy">
-                                        <rect key="frame" x="25" y="79" width="37" height="21"/>
+                                        <rect key="frame" x="25" y="80" width="36" height="20"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
                                         <color key="textColor" red="0.24313725490196078" green="0.66666666666666663" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omb-DR-2UX">
-                                        <rect key="frame" x="15" y="10" width="58" height="21"/>
+                                        <rect key="frame" x="15" y="10" width="58" height="20"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWm-hg-zKG">
-                                        <rect key="frame" x="25" y="44" width="37" height="21"/>
+                                        <rect key="frame" x="25" y="46" width="37" height="20"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="17"/>
                                         <color key="textColor" red="0.93725490196078431" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="women" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-lF-vSW">
-                                        <rect key="frame" x="65" y="48" width="49" height="17"/>
+                                        <rect key="frame" x="65" y="49" width="49" height="17"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.4549019608" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="men" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIW-5Q-WiZ">
-                                        <rect key="frame" x="65" y="83" width="29" height="17"/>
+                                        <rect key="frame" x="64" y="83" width="29" height="17"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="14"/>
                                         <color key="textColor" red="0.24313725490196078" green="0.66666666666666663" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -343,81 +343,85 @@
         <scene sceneID="dDo-wu-bSE">
             <objects>
                 <viewController id="XCZ-5t-rB7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZYC-wH-M4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="mhc-Nd-VTD"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BSL-o2-4Bu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="igz-7I-YgT">
-                                <rect key="frame" x="15" y="10" width="30.5" height="191"/>
+                                <rect key="frame" x="15" y="10" width="29" height="191"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05-10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovx-d8-Vac">
-                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11-15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKT-Bz-gNH">
-                                        <rect key="frame" x="0.0" y="16.5" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="16.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65Q-DY-N8J">
-                                        <rect key="frame" x="0.0" y="33" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="33" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21-25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVk-OG-291">
-                                        <rect key="frame" x="0.0" y="49.5" width="30.5" height="10"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="29" height="10"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26-30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfc-hJ-2J2">
-                                        <rect key="frame" x="0.0" y="65.5" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="65.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31-35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-Dy-4PK">
-                                        <rect key="frame" x="0.0" y="82" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="82" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36-40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="XCc-fa-KT4">
-                                        <rect key="frame" x="0.0" y="98.5" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41-45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4V-cE-v2E">
-                                        <rect key="frame" x="0.0" y="115" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="115" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46-50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="5qZ-gQ-vb3">
-                                        <rect key="frame" x="0.0" y="131.5" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="131.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51-55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg4-Qz-gMA">
-                                        <rect key="frame" x="0.0" y="148" width="30.5" height="10"/>
+                                        <rect key="frame" x="0.0" y="148" width="29" height="10"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56-60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-ma-oZ0">
-                                        <rect key="frame" x="0.0" y="164" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="164" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="61-65" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-q7-bTP">
-                                        <rect key="frame" x="0.0" y="180.5" width="30.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313730000001" green="0.043137254899999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -425,54 +429,54 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="U4j-uc-FWp">
-                                <rect key="frame" x="60.5" y="10" width="299.5" height="191"/>
+                                <rect key="frame" x="59" y="10" width="301" height="191"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuv-4m-Jiq">
-                                        <rect key="frame" x="0.0" y="0.0" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-Nj-vjl">
-                                        <rect key="frame" x="0.0" y="16.5" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="16.5" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-yr-gZm">
-                                        <rect key="frame" x="0.0" y="33" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="33" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-yq-YXm">
-                                        <rect key="frame" x="0.0" y="49.5" width="299.5" height="10"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="301" height="10"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-EC-ugG">
-                                        <rect key="frame" x="0.0" y="65.5" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="65.5" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b6-qe-ycy">
-                                        <rect key="frame" x="0.0" y="82" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="82" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EX2-Cd-T2L">
-                                        <rect key="frame" x="0.0" y="98.5" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-HE-dJm">
-                                        <rect key="frame" x="0.0" y="115" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="115" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-T7-1dp">
-                                        <rect key="frame" x="0.0" y="131.5" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="131.5" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agL-z6-NVd">
-                                        <rect key="frame" x="0.0" y="148" width="299.5" height="10"/>
+                                        <rect key="frame" x="0.0" y="148" width="301" height="10"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpC-we-0bP">
-                                        <rect key="frame" x="0.0" y="164" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="164" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Usr-sa-WYT">
-                                        <rect key="frame" x="0.0" y="180.5" width="299.5" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="301" height="10.5"/>
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -498,81 +502,85 @@
         <scene sceneID="9sI-gG-6iE">
             <objects>
                 <viewController id="Yqv-at-eit" customClass="AgeViewController" customModule="AngryMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iyk-aX-GyM"/>
+                        <viewControllerLayoutGuide type="bottom" id="fTo-lh-Kjf"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wFl-bA-lE3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="HAE-jw-kZo">
-                                <rect key="frame" x="15" y="10" width="32" height="191"/>
+                                <rect key="frame" x="15" y="10" width="29" height="191"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01-02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpO-WL-R7v">
-                                        <rect key="frame" x="0.0" y="0.0" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03-04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq5-OU-kkY">
-                                        <rect key="frame" x="0.0" y="16.5" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="16.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05-06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zj-3e-Xc1">
-                                        <rect key="frame" x="0.0" y="33" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="33" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8O-yR-BoQ">
-                                        <rect key="frame" x="0.0" y="49.5" width="32" height="10"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="29" height="10"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09-10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDO-qw-xcI">
-                                        <rect key="frame" x="0.0" y="65.5" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="65.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkI-EN-j6Z">
-                                        <rect key="frame" x="0.0" y="82" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="82" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13-14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbH-iE-dDh">
-                                        <rect key="frame" x="0.0" y="98.5" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15-16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yht-FO-JZf">
-                                        <rect key="frame" x="0.0" y="115" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="115" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17-18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBw-fA-80i">
-                                        <rect key="frame" x="0.0" y="131.5" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="131.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hw-Vd-BCp">
-                                        <rect key="frame" x="0.0" y="148" width="32" height="10"/>
+                                        <rect key="frame" x="0.0" y="148" width="29" height="10"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21-22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkm-Rx-W7k">
-                                        <rect key="frame" x="0.0" y="164" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="164" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0b-bb-4bE">
-                                        <rect key="frame" x="0.0" y="180.5" width="32" height="10.5"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="29" height="10.5"/>
                                         <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="11"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.043137254901960784" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -580,57 +588,57 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGV-5p-eeX">
-                                <rect key="frame" x="62" y="10" width="298" height="191"/>
+                                <rect key="frame" x="59" y="10" width="301" height="191"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-5D-9lZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="298" height="191"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="191"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKU-cY-CYf">
-                                                <rect key="frame" x="0.0" y="0.0" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764705882346" green="0.52549019607843139" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6x-KI-30u">
-                                                <rect key="frame" x="0.0" y="16.5" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-w7-uMC">
-                                                <rect key="frame" x="0.0" y="33" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="33" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K07-uk-tHr">
-                                                <rect key="frame" x="0.0" y="49.5" width="298" height="10"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="301" height="10"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-1e-fGG">
-                                                <rect key="frame" x="0.0" y="65.5" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="65.5" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqc-b7-qG3">
-                                                <rect key="frame" x="0.0" y="82" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="82" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Alj-ia-bFp">
-                                                <rect key="frame" x="0.0" y="98.5" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="98.5" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLX-qW-BR9">
-                                                <rect key="frame" x="0.0" y="115" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="115" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JwQ-X9-0wO">
-                                                <rect key="frame" x="0.0" y="131.5" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="131.5" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k02-b4-DgU">
-                                                <rect key="frame" x="0.0" y="148" width="298" height="10"/>
+                                                <rect key="frame" x="0.0" y="148" width="301" height="10"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-kI-36a">
-                                                <rect key="frame" x="0.0" y="164" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="164" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUQ-Qf-PPs">
-                                                <rect key="frame" x="0.0" y="180.5" width="298" height="10.5"/>
+                                                <rect key="frame" x="0.0" y="180.5" width="301" height="10.5"/>
                                                 <color key="backgroundColor" red="0.89411764705882346" green="0.52549019607843139" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
@@ -665,6 +673,10 @@
         <scene sceneID="PQw-Za-Tvh">
             <objects>
                 <viewController id="l2c-ga-h16" customClass="EmotionsViewController" customModule="AngryMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lQT-ch-cvP"/>
+                        <viewControllerLayoutGuide type="bottom" id="hiV-Jm-e7Y"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zU3-3h-xoV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
