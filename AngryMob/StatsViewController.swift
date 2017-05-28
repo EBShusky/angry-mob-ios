@@ -109,6 +109,8 @@ public class StatsViewController: UIViewController {
             PieSliceModel(value: 60, color: blueColor),
             PieSliceModel(value: 40, color: pinkColor)
         ]
+        
+        self.placeHolder.isHidden = false
 
         self.ageButton.setTitleColor(active, for: .normal)
         self.hoursButton.setTitleColor(inactive, for: .normal)
@@ -124,7 +126,7 @@ public class StatsViewController: UIViewController {
         Observable.combineLatest(self.gender.asObservable(), self.emotion.asObservable(), self.age.asObservable(), hours.asObservable()).subscribe(onNext: { gen, emo, ag, ho in
 
             guard let gender = gen, let emotion = emo, let age = ag, let hour = ho else {
-                self.placeHolder.isHidden = false
+                
                 return
             }
 
