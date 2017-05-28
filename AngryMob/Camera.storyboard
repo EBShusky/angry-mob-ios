@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,22 +26,89 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="pzS-wS-mih">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ISn-wj-6Kr"/>
+                                </constraints>
+                            </imageView>
+                            <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5w-HC-u5F" customClass="FlashView" customModule="AngryMob" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-S2-qa6">
+                                <rect key="frame" x="260" y="295" width="77" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="KQc-sz-FcR"/>
+                                    <constraint firstAttribute="width" constant="77" id="uJM-e1-JpA"/>
+                                </constraints>
+                                <state key="normal" image="TakePhotoButton"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="97D-hv-eEC" eventType="touchUpInside" id="hAi-rU-SIy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-pB-DD1">
+                                <rect key="frame" x="10" y="0.0" width="24" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="fw5-yy-TTC"/>
+                                    <constraint firstAttribute="height" constant="48" id="pSl-Ny-wbw"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="onBackClicked:" destination="97D-hv-eEC" eventType="touchUpInside" id="pg4-9z-L9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPJ-Hl-eBW">
+                                <rect key="frame" x="273.5" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="GHV-63-raS"/>
+                                    <constraint firstAttribute="height" constant="50" id="fSB-Ec-pIT"/>
+                                </constraints>
+                                <state key="normal" title="M" backgroundImage="Circle">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="modeButtonClicked:" destination="97D-hv-eEC" eventType="touchUpInside" id="GMP-n7-nnV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="G5w-HC-u5F" firstAttribute="top" secondItem="rke-bb-lJW" secondAttribute="top" id="2kw-SH-zHO"/>
                             <constraint firstItem="u1p-xn-lXL" firstAttribute="top" secondItem="rke-bb-lJW" secondAttribute="top" id="66G-YL-704"/>
+                            <constraint firstItem="lLe-OM-ieC" firstAttribute="top" secondItem="G5w-HC-u5F" secondAttribute="bottom" id="8FB-yr-EoL"/>
+                            <constraint firstItem="dJ7-S2-qa6" firstAttribute="centerY" secondItem="rke-bb-lJW" secondAttribute="centerY" id="8IX-De-tLn"/>
                             <constraint firstAttribute="trailing" secondItem="u1p-xn-lXL" secondAttribute="trailing" id="DuU-fX-TRd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="NPJ-Hl-eBW" secondAttribute="bottom" constant="20" id="H1F-8R-9bL"/>
                             <constraint firstItem="u1p-xn-lXL" firstAttribute="leading" secondItem="rke-bb-lJW" secondAttribute="leading" id="LRt-vf-Lyn"/>
+                            <constraint firstItem="pzS-wS-mih" firstAttribute="top" secondItem="rke-bb-lJW" secondAttribute="top" id="Q0r-Vx-S5f"/>
+                            <constraint firstAttribute="trailing" secondItem="pzS-wS-mih" secondAttribute="trailing" id="QeE-II-WFV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJ7-S2-qa6" secondAttribute="trailing" constant="22" id="U1S-5R-6WV"/>
                             <constraint firstItem="lLe-OM-ieC" firstAttribute="top" secondItem="u1p-xn-lXL" secondAttribute="bottom" id="XAh-CR-lvX"/>
+                            <constraint firstItem="pzS-wS-mih" firstAttribute="leading" secondItem="rke-bb-lJW" secondAttribute="leading" id="ZvS-le-i88"/>
+                            <constraint firstItem="G5w-HC-u5F" firstAttribute="leading" secondItem="rke-bb-lJW" secondAttribute="leading" id="dyy-Zu-dh7"/>
+                            <constraint firstItem="REQ-pB-DD1" firstAttribute="leading" secondItem="rke-bb-lJW" secondAttribute="leading" constant="10" id="eSh-yl-3Zv"/>
+                            <constraint firstItem="REQ-pB-DD1" firstAttribute="top" secondItem="rke-bb-lJW" secondAttribute="top" id="k7O-xj-x0p"/>
+                            <constraint firstAttribute="trailing" secondItem="G5w-HC-u5F" secondAttribute="trailing" id="u70-pW-5fh"/>
+                            <constraint firstItem="NPJ-Hl-eBW" firstAttribute="centerX" secondItem="dJ7-S2-qa6" secondAttribute="centerX" id="wpi-lm-5tc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="REQ-pB-DD1" id="8HE-tc-Kbt"/>
                         <outlet property="cameraHolderView" destination="u1p-xn-lXL" id="TF5-KA-VOc"/>
+                        <outlet property="flashView" destination="G5w-HC-u5F" id="JRw-Yo-4Gf"/>
+                        <outlet property="modeButton" destination="NPJ-Hl-eBW" id="EPE-tk-IPb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaY-SP-6wP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="-31"/>
+            <point key="canvasLocation" x="-251" y="-132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Back" width="14" height="22"/>
+        <image name="Circle" width="50" height="50"/>
+        <image name="Shadow" width="667" height="196"/>
+        <image name="TakePhotoButton" width="77" height="77"/>
+    </resources>
 </document>

@@ -17,6 +17,8 @@
 		BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366471ED8CAA8005ADF0B /* APIClient.swift */; };
 		BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763D1ED96A8C002E8EEA /* Router.swift */; };
 		BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */; };
+		BFA750171ED9F92700BB91B3 /* FlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA750161ED9F92700BB91B3 /* FlashView.swift */; };
+		BFA750191EDA1DF200BB91B3 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA750181EDA1DF200BB91B3 /* CameraController.swift */; };
 		BFB5BFE91ED9BDB100B0846C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */; };
 		BFB5BFEB1ED9BDCE00B0846C /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */; };
 		BFB5BFED1ED9CBA200B0846C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */; };
@@ -40,6 +42,8 @@
 		BCBF763C1ED8EE11002E8EEA /* AngryMob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AngryMob-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCBF763D1ED96A8C002E8EEA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		BFA750161ED9F92700BB91B3 /* FlashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashView.swift; sourceTree = "<group>"; };
+		BFA750181EDA1DF200BB91B3 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				BCA366371ED8BF57005ADF0B /* ViewController.swift */,
 				BC4FC9271ED9B51C0045BFB5 /* CameraOutputProcessor.swift */,
 				BC4FC9251ED9B5160045BFB5 /* CameraViewController.swift */,
+				BFA750181EDA1DF200BB91B3 /* CameraController.swift */,
 				BCA366391ED8BF57005ADF0B /* Main.storyboard */,
 				BCA3663C1ED8BF57005ADF0B /* Assets.xcassets */,
 				BCA3663E1ED8BF57005ADF0B /* LaunchScreen.storyboard */,
@@ -113,6 +118,7 @@
 				BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */,
 				BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */,
 				BFB5BFEE1ED9CBB000B0846C /* Stats.storyboard */,
+				BFA750161ED9F92700BB91B3 /* FlashView.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 				BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */,
 				BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */,
 				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
+				BFA750171ED9F92700BB91B3 /* FlashView.swift in Sources */,
+				BFA750191EDA1DF200BB91B3 /* CameraController.swift in Sources */,
 				BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */,
 				BC4FC9261ED9B5160045BFB5 /* CameraViewController.swift in Sources */,
 				BFB5BFEB1ED9BDCE00B0846C /* StatsViewController.swift in Sources */,

@@ -12,24 +12,14 @@ import UIKit
 
 
 public class CameraOutputProcessor {
-    private let processInterval:CFTimeInterval
     private var isProcessingFrame: Bool
-    private var startProcessingTime: CFAbsoluteTime;
     
-    
-    public init (processInterval:CFTimeInterval) {
-        self.processInterval = processInterval
+    public init () {
         self.isProcessingFrame = false
-        self.startProcessingTime = 0.0
     }
     
-    
-    public func processFrameToJpg(sampleBuffer: CMSampleBuffer!, complitionClosure: @escaping (Data)->(Void)) {
-        
-        let now = CFAbsoluteTimeGetCurrent()
-        
-        if (!isProcessingFrame && now - startProcessingTime > processInterval) {
-            startProcessingTime = now
+    public func processFrameToJpg(sampleBuffer: CMSampleBuffer!, complitionClosure: @escaping (Data)->(Void)) -> Bool {        
+        if (!isProcessingFrame) {
             isProcessingFrame = true
             let data = fromBufferToJpg(sampleBuffer: sampleBuffer);
             
@@ -37,7 +27,11 @@ public class CameraOutputProcessor {
                 complitionClosure(data)
             }
             isProcessingFrame = false
+            
+            return true
         }
+        
+        return false
     }
     
     private func fromBufferToJpg(sampleBuffer: CMSampleBuffer!) -> Data {
