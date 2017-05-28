@@ -230,6 +230,20 @@ public class StatsViewController: UIViewController {
         api.getEmotionSummary(from: formatter.string(from: since), to: formatter.string(from: to)).bind(to: emotion).addDisposableTo(disposeBag)
     }
     
+    public func ageSummary() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        
+        api.getAgeSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { age in
+            self.ageVC.showAge(ageObject: age)
+            
+        }).addDisposableTo(disposeBag)
+    }
+    
+    public func hoursSummary() {
+        
+    }
+    
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "age" {
             let dest = segue.destination as! AgeViewController

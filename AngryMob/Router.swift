@@ -15,6 +15,8 @@ enum Router {
     case image(imageData: Data, fileName: String)
     case genderSummary(dateFrom: String, dateTo: String)
     case emotions(dateFrom: String, dateTo: String)
+    case ageSummary(dateFrom: String, dateTo: String)
+    case hoursSummary(dateFrom: String, dateTo: String)
 }
 
 extension Router: TargetType {
@@ -31,6 +33,10 @@ extension Router: TargetType {
             return "/info/genderSummary"
         case .emotions( _, _):
             return "/info/emotionSummary"
+        case .ageSummary(_, _):
+            return "/info/ageSummary"
+        case .hoursSummary(_, _):
+            return "/info/hoursSummary"
         }
     }
     
@@ -38,7 +44,7 @@ extension Router: TargetType {
         switch self {
         case .image:
             return .post
-        case .genderSummary, .emotions:
+        case .genderSummary, .ageSummary, .hoursSummary, .emotions:
             return .get
             //        default:
             //            return .post
@@ -51,6 +57,10 @@ extension Router: TargetType {
             return nil
         case .genderSummary(let dateFrom, let dateTo), .emotions(let dateFrom, let dateTo):
             return ["since":dateFrom, "until":dateTo]
+        case .ageSummary(let dateFrom, let dateTo):
+            return ["since":dateFrom, "until":dateTo]
+        case .hoursSummary(let dateFrom, let dateTo):
+            return ["since":dateFrom, "until":dateTo]
             
             //        default:
             //            return nil
@@ -59,7 +69,7 @@ extension Router: TargetType {
     
     var parameterEncoding: Moya.ParameterEncoding {
         switch self {
-        case .genderSummary, .emotions:
+        case .genderSummary, .ageSummary, .hoursSummary, .emotions:
             return URLEncoding.default
         default:
             return JSONEncoding.default
