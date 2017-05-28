@@ -15,6 +15,10 @@ class EmotionsViewController: UIViewController {
     
     @IBOutlet weak var emotionsChart: PieChart!
     
+    let api = APIClient.sharedInstance
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

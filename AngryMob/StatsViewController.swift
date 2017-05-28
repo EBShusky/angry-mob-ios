@@ -37,6 +37,9 @@ public class StatsViewController: UIViewController {
     @IBOutlet weak var leadingConst: NSLayoutConstraint!
     @IBOutlet weak var widthConst: NSLayoutConstraint!
     
+    var ageVC: AgeViewController!
+    var emotionsVC: EmotionsViewController!
+//    var hoursVC: 
     
     let pinkColor = UIColor(red:0.94, green:0.45, blue:0.45, alpha:1.0)
     let blueColor = UIColor(red:0.24, green:0.67, blue:0.90, alpha:1.0)
@@ -179,7 +182,7 @@ public class StatsViewController: UIViewController {
         
         api.getGenderSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { gender in
             self.summaryLabel.text = "\(gender.female + gender.male)"
-            let doubleman: Double = (Double(gender.female) / (Double(gender.female) + Double(gender.male))) * 100
+            let doubleman: Double = (Double(gender.male) / (Double(gender.female) + Double(gender.male))) * 100
             self.menPercent.text = "\(Int(doubleman)) %"
             let doublewoman = (Double(gender.female) / (Double(gender.female) + Double(gender.male))) * 100
             self.womenPercent.text = "\(Int(doublewoman)) %"
@@ -191,6 +194,19 @@ public class StatsViewController: UIViewController {
             
             
         }).addDisposableTo(disposeBag)
+    }
+    
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "age" {
+            let dest = segue.destination as! AgeViewController
+            self.ageVC = dest
+        } else if segue.identifier == "hours" {
+            let dest = segue.destination
+//            self.
+        } else if segue.identifier == "emotions" {
+            let dest = segue.destination as! EmotionsViewController
+            self.emotionsVC = dest
+        }
     }
     
 }
