@@ -39,7 +39,6 @@ public class StatsViewController: UIViewController {
     
     var ageVC: AgeViewController!
     var emotionsVC: EmotionsViewController!
-//    var hoursVC: 
     
     let pinkColor = UIColor(red:0.94, green:0.45, blue:0.45, alpha:1.0)
     let blueColor = UIColor(red:0.24, green:0.67, blue:0.90, alpha:1.0)
@@ -130,6 +129,7 @@ public class StatsViewController: UIViewController {
             
 //            self.genderSummary()
             self.ageSummary()
+            self.hoursSummary()
         }).addDisposableTo(disposeBag)
     }
     
@@ -207,7 +207,13 @@ public class StatsViewController: UIViewController {
     }
     
     public func hoursSummary() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         
+        api.getHoursSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { age in
+//            self.hoursVC.showAge(ageObject: age)
+            
+        }).addDisposableTo(disposeBag)
     }
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
