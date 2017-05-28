@@ -41,6 +41,7 @@
 		BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */; };
 		BF26D7841EDABC6700D40989 /* HorizontalProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26D7831EDABC6700D40989 /* HorizontalProgressBarView.swift */; };
 		BF26D7861EDAD03500D40989 /* HoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26D7851EDAD03500D40989 /* HoursViewController.swift */; };
+		BF26D7881EDAD68600D40989 /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26D7871EDAD68600D40989 /* Age.swift */; };
 		BFA750171ED9F92700BB91B3 /* FlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA750161ED9F92700BB91B3 /* FlashView.swift */; };
 		BFA750191EDA1DF200BB91B3 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA750181EDA1DF200BB91B3 /* CameraController.swift */; };
 		BFB5BFE91ED9BDB100B0846C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */; };
@@ -90,6 +91,7 @@
 		BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 		BF26D7831EDABC6700D40989 /* HorizontalProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalProgressBarView.swift; sourceTree = "<group>"; };
 		BF26D7851EDAD03500D40989 /* HoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursViewController.swift; sourceTree = "<group>"; };
+		BF26D7871EDAD68600D40989 /* Age.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
 		BFA750161ED9F92700BB91B3 /* FlashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashView.swift; sourceTree = "<group>"; };
 		BFA750181EDA1DF200BB91B3 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		BFB5BFE81ED9BDB100B0846C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				BC897E261EDAC410008AA941 /* Gender.swift */,
 				BF26D7831EDABC6700D40989 /* HorizontalProgressBarView.swift */,
 				BF26D7851EDAD03500D40989 /* HoursViewController.swift */,
+				BF26D7871EDAD68600D40989 /* Age.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
 				BC897E271EDAC410008AA941 /* Gender.swift in Sources */,
 				BC4FC9501EDA19690045BFB5 /* Extensions.swift in Sources */,
+				BF26D7881EDAD68600D40989 /* Age.swift in Sources */,
 				BC4FC9521EDA62670045BFB5 /* EmotionsViewController.swift in Sources */,
 				BFA750171ED9F92700BB91B3 /* FlashView.swift in Sources */,
 				BFA750191EDA1DF200BB91B3 /* CameraController.swift in Sources */,

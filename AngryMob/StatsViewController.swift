@@ -128,7 +128,8 @@ public class StatsViewController: UIViewController {
         submitButton.rx.tap.subscribe(onNext:{ [weak self] in
             guard let `self` = self else { return }
             
-            self.genderSummary()
+//            self.genderSummary()
+            self.ageSummary()
         }).addDisposableTo(disposeBag)
     }
     
@@ -193,6 +194,20 @@ public class StatsViewController: UIViewController {
             ]
         
         }).addDisposableTo(disposeBag)
+    }
+    
+    public func ageSummary() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        
+        api.getAgeSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { age in
+            self.ageVC.showAge(ageObject: age)
+            
+        }).addDisposableTo(disposeBag)
+    }
+    
+    public func hoursSummary() {
+        
     }
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -434,53 +434,53 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="U4j-uc-FWp">
                                 <rect key="frame" x="59" y="10" width="301" height="191"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuv-4m-Jiq">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuv-4m-Jiq" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-Nj-vjl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-Nj-vjl" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="16.5" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-yr-gZm">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-yr-gZm" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="33" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-yq-YXm">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-yq-YXm" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="49.5" width="301" height="10"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-EC-ugG">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-EC-ugG" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65.5" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b6-qe-ycy">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b6-qe-ycy" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="82" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EX2-Cd-T2L">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EX2-Cd-T2L" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="98.5" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-HE-dJm">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-HE-dJm" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="115" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-T7-1dp">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-T7-1dp" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="131.5" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agL-z6-NVd">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agL-z6-NVd" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="301" height="10"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpC-we-0bP">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpC-we-0bP" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="164" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Usr-sa-WYT">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Usr-sa-WYT" customClass="HorizontalProgressView" customModule="AngryMob" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180.5" width="301" height="10.5"/>
-                                        <color key="backgroundColor" red="0.89411764709999997" green="0.52549019610000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </view>
                                 </subviews>
                             </stackView>

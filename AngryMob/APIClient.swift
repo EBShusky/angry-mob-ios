@@ -36,4 +36,9 @@ class APIClient: Requesting {
         return provider.request(.genderSummary(dateFrom: from, dateTo: to))
             .mapObject(type: Gender.self)
     }
+    
+    func getAgeSummary(from: String, to: String) -> Observable<Age> {
+        return provider.request(.ageSummary(dateFrom: from, dateTo: to))
+            .mapObject(type: Age.self)
+    }
 }
