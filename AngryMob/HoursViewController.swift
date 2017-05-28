@@ -18,8 +18,8 @@ class HoursViewController: UIViewController {
         
     }
     
-    public func showHours(ageObject: Age) {
-        let ageArray = ageObject.ageArray
+    public func showHours(ageObject: Hours) {
+        let ageArray = ageObject.hoursArray
         var total = 0
         
         for age in ageArray {
