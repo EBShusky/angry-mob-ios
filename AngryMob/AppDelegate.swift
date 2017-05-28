@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red:0.89, green:0.53, blue:0.14, alpha:1.0)
+        UINavigationBar.appearance().tintColor = UIColor(red:0.21, green:0.04, blue:0.23, alpha:1.0)
+        let backArrowImage = UIImage(named: "back")!.resizableImage(withCapInsets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 6))
+        let renderedImage = backArrowImage.withRenderingMode(.alwaysTemplate)
+        UINavigationBar.appearance().backIndicatorImage = renderedImage
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = renderedImage
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), for:UIBarMetrics.default)
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "Exo2-Bold", size: 10)!
+        ]
         return true
     }
 

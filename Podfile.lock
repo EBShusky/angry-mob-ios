@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (4.4.0)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - DatePickerDialog (1.1.7)
   - ModelMapper (6.0.0)
   - Moya (8.0.4):
     - Moya/Core (= 8.0.4)
@@ -16,22 +20,33 @@ PODS:
   - Moya/RxSwift (8.0.4):
     - Moya/Core
     - RxSwift (~> 3.0)
+  - PieCharts (0.0.5)
   - Result (3.2.2)
+  - RxCocoa (3.4.1):
+    - RxSwift (~> 3.4)
   - RxSwift (3.4.1)
 
 DEPENDENCIES:
+  - Charts (~> 3.0.2)
+  - DatePickerDialog (~> 1.1.7)
   - Moya-ModelMapper/RxSwift
   - Moya/RxSwift
+  - PieCharts
+  - RxCocoa
   - RxSwift (~> 3.4.1)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
   ModelMapper: 3596a82f26c43491f6a8d3a00bcdba6ba0e62a93
   Moya: a08bc060c7a44eee27447b239ed33a189b641e2b
   Moya-ModelMapper: 7084396138e6f9359881db654ee6a4d826a64f14
+  PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
   Result: 4edd39003fdccf281d418ee1b006571f70123250
+  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
   RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
 
-PODFILE CHECKSUM: f472ad1babf2485847c8fb25009b763a500c6a09
+PODFILE CHECKSUM: 41499d107f20e7813c56758cd45b1244eb5abbb3
 
 COCOAPODS: 1.1.1

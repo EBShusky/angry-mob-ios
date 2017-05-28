@@ -1,18 +1,18 @@
 //
-//  ViewController.swift
+//  AgeViewController.swift
 //  AngryMob
 //
-//  Created by Wiktor Wielgus on 26.05.2017.
+//  Created by Wiktor Wielgus on 28.05.2017.
 //  Copyright © 2017 AngryMobTeam. All rights reserved.
 //
 
 import UIKit
-import Moya
+import Charts
 
-class ViewController: UIViewController {
+class AgeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
-
 }

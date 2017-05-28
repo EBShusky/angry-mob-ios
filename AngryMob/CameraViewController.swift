@@ -13,7 +13,7 @@ import AVFoundation
 class CameraViewController: UIViewController {
     @IBOutlet weak var cameraHolderView: UIView!
     
-    
+    let api = APIClient()
 //    var previewView : UIView!
     var boxView:UIView!
     let myButton: UIButton = UIButton()
@@ -25,7 +25,7 @@ class CameraViewController: UIViewController {
     var captureDevice : AVCaptureDevice!
     let session = AVCaptureSession()
     
-    let cameraProcessor = CameraOutputProcessor(processInterval: 5)
+    let cameraProcessor = CameraOutputProcessor(processInterval: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +42,6 @@ class CameraViewController: UIViewController {
         view.addSubview(myButton)
         
         self.setupAVCapture()
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     deinit {
@@ -109,6 +103,9 @@ extension CameraViewController:  AVCaptureVideoDataOutputSampleBufferDelegate{
                        from connection: AVCaptureConnection!) {
 //        print("capture")
         cameraProcessor.processFrameToJpg(sampleBuffer: sampleBuffer) { (data) -> (Void) in
+            
+            self.api.uploadImage(image: data, fileName: "file-001.jpg")
+            
             
         }
         // do stuff here

@@ -9,6 +9,27 @@
 /* Begin PBXBuildFile section */
 		BC4FC9261ED9B5160045BFB5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9251ED9B5160045BFB5 /* CameraViewController.swift */; };
 		BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9271ED9B51C0045BFB5 /* CameraOutputProcessor.swift */; };
+		BC4FC93D1ED9FC7C0045BFB5 /* Exo2-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC92B1ED9FC7C0045BFB5 /* Exo2-Black.ttf */; };
+		BC4FC93E1ED9FC7C0045BFB5 /* Exo2-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC92C1ED9FC7C0045BFB5 /* Exo2-BlackItalic.ttf */; };
+		BC4FC93F1ED9FC7C0045BFB5 /* Exo2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC92D1ED9FC7C0045BFB5 /* Exo2-Bold.ttf */; };
+		BC4FC9401ED9FC7C0045BFB5 /* Exo2-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC92E1ED9FC7C0045BFB5 /* Exo2-BoldItalic.ttf */; };
+		BC4FC9411ED9FC7C0045BFB5 /* Exo2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC92F1ED9FC7C0045BFB5 /* Exo2-ExtraBold.ttf */; };
+		BC4FC9421ED9FC7C0045BFB5 /* Exo2-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9301ED9FC7C0045BFB5 /* Exo2-ExtraBoldItalic.ttf */; };
+		BC4FC9431ED9FC7C0045BFB5 /* Exo2-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9311ED9FC7C0045BFB5 /* Exo2-ExtraLight.ttf */; };
+		BC4FC9441ED9FC7C0045BFB5 /* Exo2-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9321ED9FC7C0045BFB5 /* Exo2-ExtraLightItalic.ttf */; };
+		BC4FC9451ED9FC7C0045BFB5 /* Exo2-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9331ED9FC7C0045BFB5 /* Exo2-Italic.ttf */; };
+		BC4FC9461ED9FC7C0045BFB5 /* Exo2-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9341ED9FC7C0045BFB5 /* Exo2-Light.ttf */; };
+		BC4FC9471ED9FC7C0045BFB5 /* Exo2-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9351ED9FC7C0045BFB5 /* Exo2-LightItalic.ttf */; };
+		BC4FC9481ED9FC7C0045BFB5 /* Exo2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9361ED9FC7C0045BFB5 /* Exo2-Medium.ttf */; };
+		BC4FC9491ED9FC7C0045BFB5 /* Exo2-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9371ED9FC7C0045BFB5 /* Exo2-MediumItalic.ttf */; };
+		BC4FC94A1ED9FC7C0045BFB5 /* Exo2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9381ED9FC7C0045BFB5 /* Exo2-Regular.ttf */; };
+		BC4FC94B1ED9FC7C0045BFB5 /* Exo2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC9391ED9FC7C0045BFB5 /* Exo2-SemiBold.ttf */; };
+		BC4FC94C1ED9FC7C0045BFB5 /* Exo2-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC93A1ED9FC7C0045BFB5 /* Exo2-SemiBoldItalic.ttf */; };
+		BC4FC94D1ED9FC7C0045BFB5 /* Exo2-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC93B1ED9FC7C0045BFB5 /* Exo2-Thin.ttf */; };
+		BC4FC94E1ED9FC7C0045BFB5 /* Exo2-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4FC93C1ED9FC7C0045BFB5 /* Exo2-ThinItalic.ttf */; };
+		BC4FC9501EDA19690045BFB5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC94F1EDA19690045BFB5 /* Extensions.swift */; };
+		BC4FC9521EDA62670045BFB5 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9511EDA62670045BFB5 /* EmotionsViewController.swift */; };
+		BC4FC9541EDA698D0045BFB5 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FC9531EDA698D0045BFB5 /* AgeViewController.swift */; };
 		BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366351ED8BF57005ADF0B /* AppDelegate.swift */; };
 		BCA366381ED8BF57005ADF0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366371ED8BF57005ADF0B /* ViewController.swift */; };
 		BCA3663B1ED8BF57005ADF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA366391ED8BF57005ADF0B /* Main.storyboard */; };
@@ -29,6 +50,27 @@
 		A274F325D36035A946CE8081 /* Pods-AngryMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngryMob.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngryMob/Pods-AngryMob.release.xcconfig"; sourceTree = "<group>"; };
 		BC4FC9251ED9B5160045BFB5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BC4FC9271ED9B51C0045BFB5 /* CameraOutputProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOutputProcessor.swift; sourceTree = "<group>"; };
+		BC4FC92B1ED9FC7C0045BFB5 /* Exo2-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Black.ttf"; sourceTree = "<group>"; };
+		BC4FC92C1ED9FC7C0045BFB5 /* Exo2-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC92D1ED9FC7C0045BFB5 /* Exo2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Bold.ttf"; sourceTree = "<group>"; };
+		BC4FC92E1ED9FC7C0045BFB5 /* Exo2-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC92F1ED9FC7C0045BFB5 /* Exo2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BC4FC9301ED9FC7C0045BFB5 /* Exo2-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC9311ED9FC7C0045BFB5 /* Exo2-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BC4FC9321ED9FC7C0045BFB5 /* Exo2-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC9331ED9FC7C0045BFB5 /* Exo2-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Italic.ttf"; sourceTree = "<group>"; };
+		BC4FC9341ED9FC7C0045BFB5 /* Exo2-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Light.ttf"; sourceTree = "<group>"; };
+		BC4FC9351ED9FC7C0045BFB5 /* Exo2-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-LightItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC9361ED9FC7C0045BFB5 /* Exo2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Medium.ttf"; sourceTree = "<group>"; };
+		BC4FC9371ED9FC7C0045BFB5 /* Exo2-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC9381ED9FC7C0045BFB5 /* Exo2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.ttf"; sourceTree = "<group>"; };
+		BC4FC9391ED9FC7C0045BFB5 /* Exo2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBold.ttf"; sourceTree = "<group>"; };
+		BC4FC93A1ED9FC7C0045BFB5 /* Exo2-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC93B1ED9FC7C0045BFB5 /* Exo2-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Thin.ttf"; sourceTree = "<group>"; };
+		BC4FC93C1ED9FC7C0045BFB5 /* Exo2-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BC4FC94F1EDA19690045BFB5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC4FC9511EDA62670045BFB5 /* EmotionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
+		BC4FC9531EDA698D0045BFB5 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		BCA366321ED8BF57005ADF0B /* AngryMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA366351ED8BF57005ADF0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA366371ED8BF57005ADF0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +118,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BC4FC92A1ED9FC5E0045BFB5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FC92B1ED9FC7C0045BFB5 /* Exo2-Black.ttf */,
+				BC4FC92C1ED9FC7C0045BFB5 /* Exo2-BlackItalic.ttf */,
+				BC4FC92D1ED9FC7C0045BFB5 /* Exo2-Bold.ttf */,
+				BC4FC92E1ED9FC7C0045BFB5 /* Exo2-BoldItalic.ttf */,
+				BC4FC92F1ED9FC7C0045BFB5 /* Exo2-ExtraBold.ttf */,
+				BC4FC9301ED9FC7C0045BFB5 /* Exo2-ExtraBoldItalic.ttf */,
+				BC4FC9311ED9FC7C0045BFB5 /* Exo2-ExtraLight.ttf */,
+				BC4FC9321ED9FC7C0045BFB5 /* Exo2-ExtraLightItalic.ttf */,
+				BC4FC9331ED9FC7C0045BFB5 /* Exo2-Italic.ttf */,
+				BC4FC9341ED9FC7C0045BFB5 /* Exo2-Light.ttf */,
+				BC4FC9351ED9FC7C0045BFB5 /* Exo2-LightItalic.ttf */,
+				BC4FC9361ED9FC7C0045BFB5 /* Exo2-Medium.ttf */,
+				BC4FC9371ED9FC7C0045BFB5 /* Exo2-MediumItalic.ttf */,
+				BC4FC9381ED9FC7C0045BFB5 /* Exo2-Regular.ttf */,
+				BC4FC9391ED9FC7C0045BFB5 /* Exo2-SemiBold.ttf */,
+				BC4FC93A1ED9FC7C0045BFB5 /* Exo2-SemiBoldItalic.ttf */,
+				BC4FC93B1ED9FC7C0045BFB5 /* Exo2-Thin.ttf */,
+				BC4FC93C1ED9FC7C0045BFB5 /* Exo2-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		BCA366291ED8BF57005ADF0B = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +164,8 @@
 		BCA366341ED8BF57005ADF0B /* AngryMob */ = {
 			isa = PBXGroup;
 			children = (
+				BC4FC92A1ED9FC5E0045BFB5 /* Fonts */,
+				BC4FC9511EDA62670045BFB5 /* EmotionsViewController.swift */,
 				BCA366351ED8BF57005ADF0B /* AppDelegate.swift */,
 				BCA366471ED8CAA8005ADF0B /* APIClient.swift */,
 				BCBF763D1ED96A8C002E8EEA /* Router.swift */,
@@ -113,6 +182,8 @@
 				BFB5BFEA1ED9BDCE00B0846C /* StatsViewController.swift */,
 				BFB5BFEC1ED9CBA200B0846C /* Camera.storyboard */,
 				BFB5BFEE1ED9CBB000B0846C /* Stats.storyboard */,
+				BC4FC94F1EDA19690045BFB5 /* Extensions.swift */,
+				BC4FC9531EDA698D0045BFB5 /* AgeViewController.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -180,11 +251,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4FC93D1ED9FC7C0045BFB5 /* Exo2-Black.ttf in Resources */,
 				BCA366401ED8BF57005ADF0B /* LaunchScreen.storyboard in Resources */,
+				BC4FC9481ED9FC7C0045BFB5 /* Exo2-Medium.ttf in Resources */,
+				BC4FC9431ED9FC7C0045BFB5 /* Exo2-ExtraLight.ttf in Resources */,
+				BC4FC9411ED9FC7C0045BFB5 /* Exo2-ExtraBold.ttf in Resources */,
+				BC4FC9441ED9FC7C0045BFB5 /* Exo2-ExtraLightItalic.ttf in Resources */,
+				BC4FC94A1ED9FC7C0045BFB5 /* Exo2-Regular.ttf in Resources */,
+				BC4FC94B1ED9FC7C0045BFB5 /* Exo2-SemiBold.ttf in Resources */,
 				BFB5BFED1ED9CBA200B0846C /* Camera.storyboard in Resources */,
 				BFB5BFEF1ED9CBB000B0846C /* Stats.storyboard in Resources */,
 				BCA3663D1ED8BF57005ADF0B /* Assets.xcassets in Resources */,
+				BC4FC9491ED9FC7C0045BFB5 /* Exo2-MediumItalic.ttf in Resources */,
+				BC4FC9461ED9FC7C0045BFB5 /* Exo2-Light.ttf in Resources */,
+				BC4FC94D1ED9FC7C0045BFB5 /* Exo2-Thin.ttf in Resources */,
+				BC4FC9471ED9FC7C0045BFB5 /* Exo2-LightItalic.ttf in Resources */,
+				BC4FC93F1ED9FC7C0045BFB5 /* Exo2-Bold.ttf in Resources */,
+				BC4FC93E1ED9FC7C0045BFB5 /* Exo2-BlackItalic.ttf in Resources */,
+				BC4FC9451ED9FC7C0045BFB5 /* Exo2-Italic.ttf in Resources */,
+				BC4FC9401ED9FC7C0045BFB5 /* Exo2-BoldItalic.ttf in Resources */,
+				BC4FC94C1ED9FC7C0045BFB5 /* Exo2-SemiBoldItalic.ttf in Resources */,
 				BCA3663B1ED8BF57005ADF0B /* Main.storyboard in Resources */,
+				BC4FC9421ED9FC7C0045BFB5 /* Exo2-ExtraBoldItalic.ttf in Resources */,
+				BC4FC94E1ED9FC7C0045BFB5 /* Exo2-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +334,12 @@
 			files = (
 				BCA366381ED8BF57005ADF0B /* ViewController.swift in Sources */,
 				BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */,
+				BC4FC9541EDA698D0045BFB5 /* AgeViewController.swift in Sources */,
 				BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */,
 				BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */,
 				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
+				BC4FC9501EDA19690045BFB5 /* Extensions.swift in Sources */,
+				BC4FC9521EDA62670045BFB5 /* EmotionsViewController.swift in Sources */,
 				BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */,
 				BC4FC9261ED9B5160045BFB5 /* CameraViewController.swift in Sources */,
 				BFB5BFEB1ED9BDCE00B0846C /* StatsViewController.swift in Sources */,
