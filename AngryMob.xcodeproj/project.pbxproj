@@ -39,6 +39,7 @@
 		BCA366481ED8CAA8005ADF0B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA366471ED8CAA8005ADF0B /* APIClient.swift */; };
 		BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763D1ED96A8C002E8EEA /* Router.swift */; };
 		BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */; };
+		BCDEB9CD1EDAD9BE0069CD43 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDEB9CC1EDAD9BE0069CD43 /* Emotion.swift */; };
 		BF26D7841EDABC6700D40989 /* HorizontalProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26D7831EDABC6700D40989 /* HorizontalProgressBarView.swift */; };
 		BF26D7861EDAD03500D40989 /* HoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26D7851EDAD03500D40989 /* HoursViewController.swift */; };
 		BFA750171ED9F92700BB91B3 /* FlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA750161ED9F92700BB91B3 /* FlashView.swift */; };
@@ -88,6 +89,7 @@
 		BCBF763C1ED8EE11002E8EEA /* AngryMob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AngryMob-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCBF763D1ED96A8C002E8EEA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BCBF763F1ED983E3002E8EEA /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		BCDEB9CC1EDAD9BE0069CD43 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		BF26D7831EDABC6700D40989 /* HorizontalProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalProgressBarView.swift; sourceTree = "<group>"; };
 		BF26D7851EDAD03500D40989 /* HoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursViewController.swift; sourceTree = "<group>"; };
 		BFA750161ED9F92700BB91B3 /* FlashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashView.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				BC897E261EDAC410008AA941 /* Gender.swift */,
 				BF26D7831EDABC6700D40989 /* HorizontalProgressBarView.swift */,
 				BF26D7851EDAD03500D40989 /* HoursViewController.swift */,
+				BCDEB9CC1EDAD9BE0069CD43 /* Emotion.swift */,
 			);
 			path = AngryMob;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				BCBF76401ED983E3002E8EEA /* ImageInfo.swift in Sources */,
 				BC4FC9541EDA698D0045BFB5 /* AgeViewController.swift in Sources */,
 				BCA366361ED8BF57005ADF0B /* AppDelegate.swift in Sources */,
+				BCDEB9CD1EDAD9BE0069CD43 /* Emotion.swift in Sources */,
 				BC4FC9281ED9B51C0045BFB5 /* CameraOutputProcessor.swift in Sources */,
 				BCBF763E1ED96A8C002E8EEA /* Router.swift in Sources */,
 				BC897E271EDAC410008AA941 /* Gender.swift in Sources */,

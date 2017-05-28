@@ -36,4 +36,9 @@ class APIClient: Requesting {
         return provider.request(.genderSummary(dateFrom: from, dateTo: to))
             .mapObject(type: Gender.self)
     }
+    
+    func getEmotionSummary(from: String, to: String) -> Observable<EmotionModel> {
+        return provider.request(.emotions(dateFrom: from, dateTo: to))
+            .mapObject(type: EmotionModel.self)
+    }
 }

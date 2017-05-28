@@ -14,6 +14,7 @@ let apiBaseURL = "http://192.168.1.130:8080"
 enum Router {
     case image(imageData: Data, fileName: String)
     case genderSummary(dateFrom: String, dateTo: String)
+    case emotions(dateFrom: String, dateTo: String)
 }
 
 extension Router: TargetType {
@@ -28,6 +29,8 @@ extension Router: TargetType {
             return "/fileUpload"
         case .genderSummary(_, _):
             return "/info/genderSummary"
+        case .emotions( _, _):
+            return "/info/emotionSummary"
         }
     }
     
@@ -35,7 +38,7 @@ extension Router: TargetType {
         switch self {
         case .image:
             return .post
-        case .genderSummary:
+        case .genderSummary, .emotions:
             return .get
             //        default:
             //            return .post
@@ -46,7 +49,7 @@ extension Router: TargetType {
         switch self {
         case .image:
             return nil
-        case .genderSummary(let dateFrom, let dateTo):
+        case .genderSummary(let dateFrom, let dateTo), .emotions(let dateFrom, let dateTo):
             return ["since":dateFrom, "until":dateTo]
             
             //        default:
@@ -56,7 +59,7 @@ extension Router: TargetType {
     
     var parameterEncoding: Moya.ParameterEncoding {
         switch self {
-        case .genderSummary:
+        case .genderSummary, .emotions:
             return URLEncoding.default
         default:
             return JSONEncoding.default

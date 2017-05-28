@@ -39,7 +39,7 @@ public class StatsViewController: UIViewController {
     
     var ageVC: AgeViewController!
     var emotionsVC: EmotionsViewController!
-//    var hoursVC: 
+    var hoursVC: HoursViewController!
     
     let pinkColor = UIColor(red:0.94, green:0.45, blue:0.45, alpha:1.0)
     let blueColor = UIColor(red:0.24, green:0.67, blue:0.90, alpha:1.0)
@@ -51,6 +51,15 @@ public class StatsViewController: UIViewController {
     
     var since: Date = Date()
     var to: Date = Date()
+    
+    var gender: Variable<Gender?> = Variable(nil)
+    var emotion: Variable<EmotionModel?> = Variable(nil)
+//    var age: Variable<?> = Variable(nil)
+//    var hours: Variable<?> = Variable(nil)
+    
+//    lazy var downloadInfo = Observable.combineLatest(self.gender.asObservable(), self.emotion.asObservable()) { gender, emotion in
+//    
+//    }
     
     @IBOutlet weak var ageContainer: UIView!
     @IBOutlet weak var hoursContainer: UIView!
@@ -106,8 +115,34 @@ public class StatsViewController: UIViewController {
         self.ageContainer.alpha = 1
         self.hoursContainer.alpha = 0
         self.emotionsContainer.alpha = 0
+        
+        
+        Observable.combineLatest(self.gender.asObservable(), self.emotion.asObservable()).subscribe(onNext: { gen, emo in
+            
+            guard let gender = gen, let emotion = emo else {
+                return
+            }
+            
+            self.emotionsVC.presentEmotion(emotion: emotion)
+            self.presentGender(gender: gender)
+        }).addDisposableTo(disposeBag)
     }
     
+    func presentGender(gender: Gender) {
+        self.summaryLabel.text = "\(gender.female + gender.male)"
+        
+        let doubleman: Double = (Double(gender.male) / (Double(gender.female) + Double(gender.male))) * 100
+        self.menPercent.text = "\(Int(doubleman)) %"
+        
+        let doublewoman = 100 - Int(doubleman)
+        self.womenPercent.text = "\(doublewoman) %"
+        
+        self.genderChart.removeSlices()
+        self.genderChart.models = [
+            PieSliceModel(value: Double(Int(doubleman)), color: self.blueColor),
+            PieSliceModel(value: Double(doublewoman), color: self.pinkColor)
+        ]
+    }
     
     func setupButtons() {
         ageButton.rx.tap.subscribe(onNext:{ [weak self] in
@@ -128,7 +163,11 @@ public class StatsViewController: UIViewController {
         submitButton.rx.tap.subscribe(onNext:{ [weak self] in
             guard let `self` = self else { return }
             
+            self.gender.value = nil
+            self.emotion.value = nil
+            
             self.genderSummary()
+            self.getEmotionsSummary()
         }).addDisposableTo(disposeBag)
     }
     
@@ -180,19 +219,15 @@ public class StatsViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         
-        api.getGenderSummary(from: formatter.string(from: since), to: formatter.string(from: to)).subscribe(onNext: { gender in
-            self.summaryLabel.text = "\(gender.female + gender.male)"
-            let doubleman: Double = (Double(gender.male) / (Double(gender.female) + Double(gender.male))) * 100
-            self.menPercent.text = "\(Int(doubleman)) %"
-            let doublewoman = (Double(gender.female) / (Double(gender.female) + Double(gender.male))) * 100
-            self.womenPercent.text = "\(Int(doublewoman)) %"
-            
-            self.genderChart.models = [
-                PieSliceModel(value: Double(gender.male), color: self.blueColor),
-                PieSliceModel(value: Double(gender.female), color: self.pinkColor)
-            ]
+        api.getGenderSummary(from: formatter.string(from: since), to: formatter.string(from: to)).bind(to: gender)
+        .addDisposableTo(disposeBag)
+    }
+    
+    func getEmotionsSummary() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         
-        }).addDisposableTo(disposeBag)
+        api.getEmotionSummary(from: formatter.string(from: since), to: formatter.string(from: to)).bind(to: emotion).addDisposableTo(disposeBag)
     }
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -200,8 +235,8 @@ public class StatsViewController: UIViewController {
             let dest = segue.destination as! AgeViewController
             self.ageVC = dest
         } else if segue.identifier == "hours" {
-            let dest = segue.destination
-//            self.
+            let dest = segue.destination as! HoursViewController
+            self.hoursVC = dest
         } else if segue.identifier == "emotions" {
             let dest = segue.destination as! EmotionsViewController
             self.emotionsVC = dest
